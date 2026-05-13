@@ -22,7 +22,7 @@ jobs:
     - name: Download build artifacts
       uses: actions/download-artifact@v4
       with:
-        name: app-jar
+        name: build-artifacts
         path: target/
         run-id: '${{ github.event.workflow_run.id }}'
 
